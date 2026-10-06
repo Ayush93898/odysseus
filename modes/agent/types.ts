@@ -38,7 +38,7 @@ export interface AgentConfig {
 }
 
 export const defaultAgentConfig = (): AgentConfig => ({
-  codebasePath: process.cwd(), //  ans node js bhi hona chaiye
+  codebasePath: process.cwd(), //  and node js bhi hona chaiye
   maxFileSizeToRead: 1024 * 1024 ,
   excludePatterns: [
     'node_modules',

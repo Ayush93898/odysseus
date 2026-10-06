@@ -1,10 +1,10 @@
 import type { ActionLog, ActionStatus } from "./types";
 import { isMutationType } from "./types";
 
-export class ActionTracker {
+export class ActionTracker { // actiontracker -- jitne bhi tool hai unka side-effect kya hua....
   private actions: ActionLog[] = [];
 
-  log(
+  log( // basically logs ko collect karke actions wali array me append karra hai
     entry: Omit<ActionLog, "id" | "timestamp"> & {
       id?: string;
       timestamp?: Date;
